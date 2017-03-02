@@ -1,7 +1,0 @@
-/* Generated automatically. */
-static const char configuration_arguments[] = "/tmp/ct-ng-build/src/gcc-4.9.3/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=arm-unknown-linux-gnueabihf --prefix=/usr/local/arm-unknown-linux-gnueabihf --with-sysroot=/usr/local/arm-unknown-linux-gnueabihf/arm-unknown-linux-gnueabihf/sysroot --enable-languages=c,c++ --with-cpu=cortex-a7 --with-fpu=vfpv4 --with-float=hard --with-pkgversion='crosstool-NG crosstool-ng-1.22.0' --enable-__cxa_atexit --disable-libmudflap --disable-libgomp --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libsanitizer --with-gmp=/tmp/ct-ng-build/arm-unknown-linux-gnueabihf/buildtools --with-mpfr=/tmp/ct-ng-build/arm-unknown-linux-gnueabihf/buildtools --with-mpc=/tmp/ct-ng-build/arm-unknown-linux-gnueabihf/buildtools --with-isl=/tmp/ct-ng-build/arm-unknown-linux-gnueabihf/buildtools --with-cloog=/tmp/ct-ng-build/arm-unknown-linux-gnueabihf/buildtools --with-libelf=/tmp/ct-ng-build/arm-unknown-linux-gnueabihf/buildtools --enable-lto --enable-threads=posix --enable-target-optspace --disable-nls --disable-multilib --with-local-prefix=/usr/local/arm-unknown-linux-gnueabihf/arm-unknown-linux-gnueabihf/sysroot --enable-long-long";
-static const char thread_model[] = "posix";
-
-static const struct {
-  const char *name, *value;
-} configure_default_options[] = { { "cpu", "cortex-a7" }, { "float", "hard" }, { "fpu", "vfpv4" }, { "tls", "gnu" } };

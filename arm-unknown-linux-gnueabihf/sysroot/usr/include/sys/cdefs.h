@@ -1,4 +1,4 @@
-/* Copyright (C) 1992-2015 Free Software Foundation, Inc.
+/* Copyright (C) 1992-2016 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -304,8 +304,13 @@
 
 /* Forces a function to be always inlined.  */
 #if __GNUC_PREREQ (3,2)
+/* The Linux kernel defines __always_inline in stddef.h (283d7573), and
+   it conflicts with this definition.  Therefore undefine it first to
+   allow either header to be included first.  */
+# undef __always_inline
 # define __always_inline __inline __attribute__ ((__always_inline__))
 #else
+# undef __always_inline
 # define __always_inline __inline
 #endif
 

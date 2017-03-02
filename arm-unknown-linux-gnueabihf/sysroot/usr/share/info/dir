@@ -32,8 +32,10 @@ GNU C library functions and macros
 * __ppc_mdoio: (libc)PowerPC.
 * __ppc_mdoom: (libc)PowerPC.
 * __ppc_set_ppr_low: (libc)PowerPC.
+* __ppc_set_ppr_med_high: (libc)PowerPC.
 * __ppc_set_ppr_med_low: (libc)PowerPC.
 * __ppc_set_ppr_med: (libc)PowerPC.
+* __ppc_set_ppr_very_low: (libc)PowerPC.
 * __ppc_yield: (libc)PowerPC.
 * __va_copy: (libc)Argument Macros.
 * _Complex_I: (libc)Complex Numbers.
@@ -128,6 +130,7 @@ GNU C library functions and macros
 * assert_perror: (libc)Consistency Checking.
 * assert: (libc)Consistency Checking.
 * atan2f: (libc)Inverse Trig Functions.
+* atan2l: (libc)Inverse Trig Functions.
 * atan2: (libc)Inverse Trig Functions.
 * atanf: (libc)Inverse Trig Functions.
 * atanhf: (libc)Hyperbolic Functions.
@@ -135,7 +138,6 @@ GNU C library functions and macros
 * atanh: (libc)Hyperbolic Functions.
 * atanl: (libc)Inverse Trig Functions.
 * atan: (libc)Inverse Trig Functions.
-* atan2l: (libc)Inverse Trig Functions.
 * atexit: (libc)Cleanups on Exit.
 * atof: (libc)Parsing of Floats.
 * atoi: (libc)Parsing of Integers.
@@ -151,7 +153,7 @@ GNU C library functions and macros
 * BC_SCALE_MAX: (libc)Utility Limits.
 * BC_STRING_MAX: (libc)Utility Limits.
 * bcmp: (libc)String/Array Comparison.
-* bcopy: (libc)Copying and Concatenation.
+* bcopy: (libc)Copying Strings and Arrays.
 * bind_textdomain_codeset: (libc)Charset conversion in gettext.
 * bindtextdomain: (libc)Locating gettext catalog.
 * bind: (libc)Setting Address.
@@ -160,7 +162,7 @@ GNU C library functions and macros
 * bsearch: (libc)Array Search Function.
 * btowc: (libc)Converting a Character.
 * BUFSIZ: (libc)Controlling Buffering.
-* bzero: (libc)Copying and Concatenation.
+* bzero: (libc)Copying Strings and Arrays.
 * cabsf: (libc)Absolute Value.
 * cabsl: (libc)Absolute Value.
 * cabs: (libc)Absolute Value.
@@ -230,11 +232,11 @@ GNU C library functions and macros
 * clock: (libc)CPU Time.
 * CLOCKS_PER_SEC: (libc)CPU Time.
 * clog10f: (libc)Exponents and Logarithms.
-* clog10l: (libc)Exponents and Logarithms.
 * clog10: (libc)Exponents and Logarithms.
 * clogf: (libc)Exponents and Logarithms.
 * clogl: (libc)Exponents and Logarithms.
 * clog: (libc)Exponents and Logarithms.
+* clog10l: (libc)Exponents and Logarithms.
 * closedir: (libc)Reading/Closing Directory.
 * closelog: (libc)closelog.
 * close: (libc)Opening and Closing Files.
@@ -518,18 +520,18 @@ GNU C library functions and macros
 * exit: (libc)Normal Termination.
 * EXIT_FAILURE: (libc)Exit Status.
 * EXIT_SUCCESS: (libc)Exit Status.
-* expf: (libc)Exponents and Logarithms.
-* expl: (libc)Exponents and Logarithms.
-* expm1f: (libc)Exponents and Logarithms.
-* expm1l: (libc)Exponents and Logarithms.
-* expm1: (libc)Exponents and Logarithms.
-* exp: (libc)Exponents and Logarithms.
 * exp10f: (libc)Exponents and Logarithms.
 * exp10l: (libc)Exponents and Logarithms.
 * exp10: (libc)Exponents and Logarithms.
 * exp2f: (libc)Exponents and Logarithms.
 * exp2l: (libc)Exponents and Logarithms.
 * exp2: (libc)Exponents and Logarithms.
+* expf: (libc)Exponents and Logarithms.
+* expl: (libc)Exponents and Logarithms.
+* expm1f: (libc)Exponents and Logarithms.
+* expm1l: (libc)Exponents and Logarithms.
+* expm1: (libc)Exponents and Logarithms.
+* exp: (libc)Exponents and Logarithms.
 * EXPR_NEST_MAX: (libc)Utility Limits.
 * F_DUPFD: (libc)Duplicating Descriptors.
 * F_GETFD: (libc)Descriptor Flags.
@@ -716,10 +718,10 @@ GNU C library functions and macros
 * getgroups: (libc)Reading Persona.
 * gethostbyaddr_r: (libc)Host Names.
 * gethostbyaddr: (libc)Host Names.
-* gethostbyname2_r: (libc)Host Names.
 * gethostbyname2: (libc)Host Names.
 * gethostbyname_r: (libc)Host Names.
 * gethostbyname: (libc)Host Names.
+* gethostbyname2_r: (libc)Host Names.
 * gethostent: (libc)Host Names.
 * gethostid: (libc)Host Identification.
 * gethostname: (libc)Host Identification.
@@ -962,6 +964,7 @@ GNU C library functions and macros
 * log1pf: (libc)Exponents and Logarithms.
 * log1pl: (libc)Exponents and Logarithms.
 * log1p: (libc)Exponents and Logarithms.
+* log2f: (libc)Exponents and Logarithms.
 * log2: (libc)Exponents and Logarithms.
 * logbf: (libc)Exponents and Logarithms.
 * logbl: (libc)Exponents and Logarithms.
@@ -973,7 +976,6 @@ GNU C library functions and macros
 * logout: (libc)Logging In and Out.
 * logwtmp: (libc)Logging In and Out.
 * log: (libc)Exponents and Logarithms.
-* log2f: (libc)Exponents and Logarithms.
 * log2l: (libc)Exponents and Logarithms.
 * longjmp: (libc)Non-Local Details.
 * lrand48_r: (libc)SVID Random.
@@ -1012,16 +1014,16 @@ GNU C library functions and macros
 * mcheck: (libc)Heap Consistency Checking.
 * MDMBUF: (libc)Control Modes.
 * memalign: (libc)Aligned Memory Blocks.
-* memccpy: (libc)Copying and Concatenation.
+* memccpy: (libc)Copying Strings and Arrays.
 * memchr: (libc)Search Functions.
 * memcmp: (libc)String/Array Comparison.
-* memcpy: (libc)Copying and Concatenation.
+* memcpy: (libc)Copying Strings and Arrays.
 * memfrob: (libc)Trivial Encryption.
 * memmem: (libc)Search Functions.
-* memmove: (libc)Copying and Concatenation.
-* mempcpy: (libc)Copying and Concatenation.
+* memmove: (libc)Copying Strings and Arrays.
+* mempcpy: (libc)Copying Strings and Arrays.
 * memrchr: (libc)Search Functions.
-* memset: (libc)Copying and Concatenation.
+* memset: (libc)Copying Strings and Arrays.
 * mkdir: (libc)Creating Directories.
 * mkdtemp: (libc)Temporary Files.
 * mkfifo: (libc)FIFO Special Files.
@@ -1063,9 +1065,15 @@ GNU C library functions and macros
 * nextafterf: (libc)FP Bit Twiddling.
 * nextafterl: (libc)FP Bit Twiddling.
 * nextafter: (libc)FP Bit Twiddling.
+* nextdownf: (libc)FP Bit Twiddling.
+* nextdownl: (libc)FP Bit Twiddling.
+* nextdown: (libc)FP Bit Twiddling.
 * nexttowardf: (libc)FP Bit Twiddling.
 * nexttowardl: (libc)FP Bit Twiddling.
 * nexttoward: (libc)FP Bit Twiddling.
+* nextupf: (libc)FP Bit Twiddling.
+* nextupl: (libc)FP Bit Twiddling.
+* nextup: (libc)FP Bit Twiddling.
 * nftw: (libc)Working with Directory Trees.
 * nftw64: (libc)Working with Directory Trees.
 * ngettext: (libc)Advanced gettext functions.
@@ -1168,11 +1176,11 @@ GNU C library functions and macros
 * posix_fallocate64: (libc)Storage Allocation.
 * posix_memalign: (libc)Aligned Memory Blocks.
 * pow10f: (libc)Exponents and Logarithms.
+* pow10l: (libc)Exponents and Logarithms.
 * pow10: (libc)Exponents and Logarithms.
 * powf: (libc)Exponents and Logarithms.
 * powl: (libc)Exponents and Logarithms.
 * pow: (libc)Exponents and Logarithms.
-* pow10l: (libc)Exponents and Logarithms.
 * pread: (libc)I/O Primitives.
 * pread64: (libc)I/O Primitives.
 * printf_size_info: (libc)Predefined Printf Handlers.
@@ -1218,10 +1226,10 @@ GNU C library functions and macros
 * rand: (libc)ISO Random.
 * rawmemchr: (libc)Search Functions.
 * RE_DUP_MAX: (libc)General Limits.
+* readdir64: (libc)Reading/Closing Directory.
 * readdir_r: (libc)Reading/Closing Directory.
 * readdir: (libc)Reading/Closing Directory.
 * readdir64_r: (libc)Reading/Closing Directory.
-* readdir64: (libc)Reading/Closing Directory.
 * readlink: (libc)Symbolic Links.
 * readv: (libc)Scatter-Gather.
 * read: (libc)I/O Primitives.
@@ -1442,30 +1450,30 @@ GNU C library functions and macros
 * sqrtf: (libc)Exponents and Logarithms.
 * sqrtl: (libc)Exponents and Logarithms.
 * sqrt: (libc)Exponents and Logarithms.
-* srand48_r: (libc)SVID Random.
 * srand48: (libc)SVID Random.
 * srandom_r: (libc)BSD Random.
 * srandom: (libc)BSD Random.
 * srand: (libc)ISO Random.
+* srand48_r: (libc)SVID Random.
 * sscanf: (libc)Formatted Input Functions.
 * ssignal: (libc)Basic Signal Handling.
 * SSIZE_MAX: (libc)General Limits.
 * stat: (libc)Reading Attributes.
 * stat64: (libc)Reading Attributes.
 * stime: (libc)Simple Calendar Time.
-* stpcpy: (libc)Copying and Concatenation.
-* stpncpy: (libc)Copying and Concatenation.
+* stpcpy: (libc)Copying Strings and Arrays.
+* stpncpy: (libc)Truncating Strings.
 * strcasecmp: (libc)String/Array Comparison.
 * strcasestr: (libc)Search Functions.
-* strcat: (libc)Copying and Concatenation.
+* strcat: (libc)Concatenating Strings.
 * strchrnul: (libc)Search Functions.
 * strchr: (libc)Search Functions.
 * strcmp: (libc)String/Array Comparison.
 * strcoll: (libc)Collation Functions.
-* strcpy: (libc)Copying and Concatenation.
+* strcpy: (libc)Copying Strings and Arrays.
 * strcspn: (libc)Search Functions.
-* strdupa: (libc)Copying and Concatenation.
-* strdup: (libc)Copying and Concatenation.
+* strdupa: (libc)Copying Strings and Arrays.
+* strdup: (libc)Copying Strings and Arrays.
 * STREAM_MAX: (libc)General Limits.
 * strerror_r: (libc)Error Messages.
 * strerror: (libc)Error Messages.
@@ -1474,11 +1482,11 @@ GNU C library functions and macros
 * strftime: (libc)Formatting Calendar Time.
 * strlen: (libc)String Length.
 * strncasecmp: (libc)String/Array Comparison.
-* strncat: (libc)Copying and Concatenation.
+* strncat: (libc)Truncating Strings.
 * strncmp: (libc)String/Array Comparison.
-* strncpy: (libc)Copying and Concatenation.
-* strndupa: (libc)Copying and Concatenation.
-* strndup: (libc)Copying and Concatenation.
+* strncpy: (libc)Truncating Strings.
+* strndupa: (libc)Truncating Strings.
+* strndup: (libc)Truncating Strings.
 * strnlen: (libc)String Length.
 * strpbrk: (libc)Search Functions.
 * strptime: (libc)Low-Level Time String Parsing.
@@ -1638,24 +1646,24 @@ GNU C library functions and macros
 * WCHAR_MAX: (libc)Extended Char Intro.
 * WCHAR_MIN: (libc)Extended Char Intro.
 * WCOREDUMP: (libc)Process Completion Status.
-* wcpcpy: (libc)Copying and Concatenation.
-* wcpncpy: (libc)Copying and Concatenation.
+* wcpcpy: (libc)Copying Strings and Arrays.
+* wcpncpy: (libc)Truncating Strings.
 * wcrtomb: (libc)Converting a Character.
 * wcscasecmp: (libc)String/Array Comparison.
-* wcscat: (libc)Copying and Concatenation.
+* wcscat: (libc)Concatenating Strings.
 * wcschrnul: (libc)Search Functions.
 * wcschr: (libc)Search Functions.
 * wcscmp: (libc)String/Array Comparison.
 * wcscoll: (libc)Collation Functions.
-* wcscpy: (libc)Copying and Concatenation.
+* wcscpy: (libc)Copying Strings and Arrays.
 * wcscspn: (libc)Search Functions.
-* wcsdup: (libc)Copying and Concatenation.
+* wcsdup: (libc)Copying Strings and Arrays.
 * wcsftime: (libc)Formatting Calendar Time.
 * wcslen: (libc)String Length.
 * wcsncasecmp: (libc)String/Array Comparison.
-* wcsncat: (libc)Copying and Concatenation.
+* wcsncat: (libc)Truncating Strings.
 * wcsncmp: (libc)String/Array Comparison.
-* wcsncpy: (libc)Copying and Concatenation.
+* wcsncpy: (libc)Truncating Strings.
 * wcsnlen: (libc)String Length.
 * wcsnrtombs: (libc)Converting Strings.
 * wcspbrk: (libc)Search Functions.
@@ -1690,10 +1698,10 @@ GNU C library functions and macros
 * WIFSTOPPED: (libc)Process Completion Status.
 * wmemchr: (libc)Search Functions.
 * wmemcmp: (libc)String/Array Comparison.
-* wmemcpy: (libc)Copying and Concatenation.
-* wmemmove: (libc)Copying and Concatenation.
-* wmempcpy: (libc)Copying and Concatenation.
-* wmemset: (libc)Copying and Concatenation.
+* wmemcpy: (libc)Copying Strings and Arrays.
+* wmemmove: (libc)Copying Strings and Arrays.
+* wmempcpy: (libc)Copying Strings and Arrays.
+* wmemset: (libc)Copying Strings and Arrays.
 * wordexp: (libc)Calling Wordexp.
 * wordfree: (libc)Calling Wordexp.
 * wprintf: (libc)Formatted Output Functions.

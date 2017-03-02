@@ -152,6 +152,7 @@
 #define SYS_lstat64 __NR_lstat64
 #define SYS_madvise __NR_madvise
 #define SYS_mbind __NR_mbind
+#define SYS_membarrier __NR_membarrier
 #define SYS_memfd_create __NR_memfd_create
 #define SYS_mincore __NR_mincore
 #define SYS_mkdir __NR_mkdir
@@ -159,6 +160,7 @@
 #define SYS_mknod __NR_mknod
 #define SYS_mknodat __NR_mknodat
 #define SYS_mlock __NR_mlock
+#define SYS_mlock2 __NR_mlock2
 #define SYS_mlockall __NR_mlockall
 #define SYS_mmap2 __NR_mmap2
 #define SYS_mount __NR_mount
@@ -341,6 +343,7 @@
 #define SYS_unlinkat __NR_unlinkat
 #define SYS_unshare __NR_unshare
 #define SYS_uselib __NR_uselib
+#define SYS_userfaultfd __NR_userfaultfd
 #define SYS_ustat __NR_ustat
 #define SYS_utimensat __NR_utimensat
 #define SYS_utimes __NR_utimes
@@ -500,6 +503,7 @@
 #define SYS_lstat64 __NR_lstat64
 #define SYS_madvise __NR_madvise
 #define SYS_mbind __NR_mbind
+#define SYS_membarrier __NR_membarrier
 #define SYS_memfd_create __NR_memfd_create
 #define SYS_mincore __NR_mincore
 #define SYS_mkdir __NR_mkdir
@@ -507,6 +511,7 @@
 #define SYS_mknod __NR_mknod
 #define SYS_mknodat __NR_mknodat
 #define SYS_mlock __NR_mlock
+#define SYS_mlock2 __NR_mlock2
 #define SYS_mlockall __NR_mlockall
 #define SYS_mmap2 __NR_mmap2
 #define SYS_mount __NR_mount
@@ -689,6 +694,7 @@
 #define SYS_unlinkat __NR_unlinkat
 #define SYS_unshare __NR_unshare
 #define SYS_uselib __NR_uselib
+#define SYS_userfaultfd __NR_userfaultfd
 #define SYS_ustat __NR_ustat
 #define SYS_utimensat __NR_utimensat
 #define SYS_utimes __NR_utimes
